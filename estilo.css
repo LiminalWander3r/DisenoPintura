@@ -1,0 +1,26 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+.about{
+    background-image: url('img/about-bg.jpg');
+    position:relative;
+    left:200px;
+    min-width: 200px;
+    max-width: 600px;
+    height:250px;
+}
+.section2{
+    display: flex;
+  flex-direction: row;
+}
+.abtImg{
+    position:relative;
+    bottom:100px;
+    width:600px;
+    min-width:400px;
+    height:600px;
+}
+section{
+    border: 5px black;
+}
