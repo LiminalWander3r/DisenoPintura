@@ -1,60 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PAINTER</title>
-    <link rel="stylesheet" href="estilo.css">
-</head>
-<body>
+    <link rel="stylesheet" href="estilo.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/5b5fe8e45d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="top-bar-contact">
+        <a href="#">+012 345 6789</a>
+        <a href="#">info@example.com</a>
+      </div>
+      <div class="top-bar-social">
+        <a href="#"><i class="fa-brands fa-facebook-f text-secondary"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter text-secondary"></i></a>
+        <a href="#">in</a>
+        <a href="#"><i class="fab fa-instagram text-secondary"></i></a>
+        <a href="#"><i class="fab fa-youtube text-secondary"></i></a>
+      </div>
+    </div>
     <header>
-        <!-- logo -->
-        <a href="">Logo</a>
-        <!-- hamburguer icon -->
-        <input type="checkbox" id="menu-button">
-        <label for="menu-button">Menu</label>
-        <!-- menu --> 
-        <nav> <!-- alejandra -->
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Service</a></li>
-                <li><a href="">Pages</a></li>
-                <li><a href="">Contact</a></li>
+      <!-- logo -->
+      <a class="logo" href="#"
+        ><h1>
+          <i class="fa fa-paint-roller text-secondary me-3"></i>Painter
+        </h1></a
+      >
+      <!-- hamburguer icon -->
+      <input type="checkbox" id="menu-button" class="menu-button" />
+      <label for="menu-button"></label>
+      <!-- menu -->
+      <nav>
+        <!-- alejandra -->
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Service</a></li>
+          <li>
+            <a href="#"
+              ><input type="checkbox" id="pages-menu" class="pages-menu" />
+              <label for="pages-menu">Pages</label></a
+            >
+            <ul class="submenu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Service</a></li>
             </ul>
-        </nav>
+          </li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="call-now">
+          <i class="fa-solid fa-mobile-notch"></i>
+          <p><b>Call now</b></p>
+          <p>+012 345 6789</p>
+        </div>
+      </nav>
     </header>
     <main>
-        <section class="section1"></section> <!-- javi -->
-        <section class="section2">
-            <div class="about">
-              <h2>Welcome To Painter</h2>
-              <h5>
-                Tempor erat elitr at rebum at at clita. Diam dolor diam ipsum et,
-                tempor sit sit diam amet et eos labore. Clita erat ipsum et lorem et
-                sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor
-                magna dolore erat amet
-              </h5>
+      <section class="section1"></section>
+      <!-- javi -->
+      <section class="section2">
+        <div class="about" id="about1">
+          <h2>Welcome To Painter</h2>
+          <h5>
+            Tempor erat elitr at rebum at at clita. Diam dolor diam ipsum et,
+            tempor sit sit diam amet et eos labore. Clita erat ipsum et lorem et
+            sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor
+            magna dolore erat amet
+          </h5>
+          <button class="button">aaaaaaaaaaa</button>
+        </div>
+        <img src="img/about-1.jpg" class="abtImg" />
+        <br />
+        <img src="img/about-2.jpg" class="abtImg" />
+        <div class="about" id="about2">
+          <h2>Why Choose Us?</h2>
+          <h5>
+            Tempor erat elitr at rebum at at clita. Diam dolor diam ipsum et,
+            tempor sit sit diam amet et eos labore. Clita erat ipsum et lorem et
+            sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor
+            magna dolore erat amet
+          </h5>
+          <button class="button">aaaaaaaaaaa</button>
+        </div>
+      </section>
+      <!-- miguel -->
+      <section class="section3">
+        <div class="service">
+          <div class="iconMargin">
+            <div class="iconBg"><i class="fa fa-2x fa-brush"></i></div>
+          </div>
+          <div class="serviceText">Regular Painting</div>
+        </div>
+
+        <div class="service">
+          <div class="iconMargin">
+            <div class="iconBg"><i class="fa fa-2x fa-paint-brush"></i></div>
+          </div>
+          <div class="serviceText">Wall Painting</div>
+        </div>
+
+        <div class="service">
+          <div class="iconMargin">
+            <div class="iconBg"><i class="fa fa-2x fa-paint-roller"></i></div>
+          </div>
+          <div class="serviceText">Floor Coating</div>
+        </div>
+
+        <div class="service">
+          <div class="iconMargin">
+            <div class="iconBg"><i class="fa fa-2x fa-eraser"></i></div>
+          </div>
+          <div class="serviceText">Graffiti removal</div>
+        </div>
+
+        <div class="service">
+          <div class="iconMargin">
+            <div class="iconBg"><i class="fa fa-2x fa-city"></i></div>
+          </div>
+          <div class="serviceText">Mildew Removal</div>
+        </div>
+        <div class="service">
+          <div class="iconMargin">
+            <div class="iconBg"><i class="fa fa-2x fa-spray-can"></i></div>
+          </div>
+          <div class="serviceText">Window Washing</div>
+        </div>
+      </section>
+      <!-- miguel -->
+      <section class="section4">Seccion 4</section>
+      <!-- javi -->
+      <section class="section5">Seccion 5</section>
+      <!--Caja de la sección 5-->
+      <div class="team">
+        <!--Caja para el título y la línea-->
+        <div class="teamTitle">
+          <h1 class="teamT">Dedicated Team Members</h1>
+          <hr class="teamTLine" />
+        </div>
+        <!--Caja para las imágenes y las cajas de abajo-->
+        <div class="teamMembers">
+          <div class="teamM">
+            <div class="teamImg">
+              <img src="img/team-1.jpg" class="teamImg" />
             </div>
-            <img src="img/about-1.jpg" class="abtImg"/>
-            <img src="img/about-2.jpg" class="abtImg"/>
-            <div class="about">
-              <h2>Why Choose Us?</h2>
-              <h5>
-                Tempor erat elitr at rebum at at clita. Diam dolor diam ipsum et,
-                tempor sit sit diam amet et eos labore. Clita erat ipsum et lorem et
-                sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor
-                magna dolore erat amet
-              </h5>
+            <div class="teamBottom">
+              <p class="teamName"><b style="font-size: 1.5rem">Full Name</b></p>
+              <p class="teamName">DESIGNATION</p>
             </div>
-          </section><!-- miguel -->
-        <section class="section3">Seccion 3</section> <!-- miguel -->
-        <section class="section4">Seccion 4</section> <!-- javi -->
-        <section class="section5">Seccion 5</section> <!-- carlos -->
-        <section class="section6">Seccion 6</section> <!-- javi -->
-        <section class="section7">Seccion 7</section> <!-- carlos -->
-        <section class="section8">Seccion 8</section> <!-- javi -->
+          </div>
+          <div class="teamM">
+            <div class="teamImg">
+              <img src="img/team-2.jpg" class="teamImg" />
+            </div>
+            <div class="teamBottom">
+              <p class="teamName"><b style="font-size: 1.5rem">Full Name</b></p>
+              <p class="teamName">DESIGNATION</p>
+            </div>
+          </div>
+          <div class="teamM">
+            <div class="teamImg">
+              <img src="img/team-3.jpg" class="teamImg" />
+            </div>
+            <div class="teamBottom">
+              <p class="teamName"><b style="font-size: 1.5rem">Full Name</b></p>
+              <p class="teamName">DESIGNATION</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- carlos -->
+      <section class="section6">Seccion 6</section>
+      <!-- javi -->
+      <section class="section7">Seccion 7</section>
+      <!-- carlos -->
+      <section class="section8">Seccion 8</section>
+      <!-- javi -->
     </main>
-    <footer>Footer</footer> <!-- reinel -->
-</body>
+    <footer>
+      <div class="bg-footer">
+        <div class="py-5-footer" ,>
+          <div class="row-g5-footer">
+            <div class="col-lg-3-footer">
+              <h4 class="text-primary-footer">Get In Touch</h4>
+              <hr class="w-25-footer" style="opacity: 1" />
+              <p>
+                No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita
+                et et dolor sed dolor
+              </p>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
