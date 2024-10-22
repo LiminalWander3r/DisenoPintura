@@ -7,6 +7,7 @@
 :root {
   --white: #ffffff;
   --black: rgb(26, 25, 25);
+  --yellow: rgb(253,253,68);
 }
 header {
   background-color: rgb(26, 25, 25);
@@ -20,7 +21,7 @@ header {
 .logo {
   display: flex;
   align-items: center;
-  color: yellow;
+  color: var(yellow);
   float: left;
 }
 
@@ -36,7 +37,7 @@ nav a {
   font-size: 15pt;
 }
 nav a:hover {
-  color: yellow;
+  color: var(yellow);
 }
 @media (max-width: 767px) {
   /* Estilos para pantallas con un ancho máximo de 768px */
@@ -89,103 +90,10 @@ nav a:hover {
     width: 100%;
   }
   .submenu a {
-    color: black;
+    color: var(black);
   }
   .call-now {
     display: none;
-  }
-}
-
-@media (min-width: 767px) {
-  .top-bar {
-    background-color: yellow;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .top-bar-social {
-    display: flex;
-    justify-content: space-around;
-  }
-  .top-bar-social i {
-    color: black;
-  }
-  header {
-    align-content: stretch;
-    display: flex;
-    justify-content: space-between;
-    z-index: 3;
-  }
-  label {
-    display: none;
-  }
-  .menu-button {
-    display: none;
-  }
-
-  nav {
-    display: flex;
-    align-items: center;
-  }
-  nav ul {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  nav li {
-    list-style: none;
-    color: white;
-    position: relative;
-  }
-  nav a {
-    text-decoration: none;
-    color: white;
-    margin-right: 20px;
-  }
-li label{
-  color: white;
-  width: 10px;
-}
-  .submenu {
-    position: absolute;
-    visibility: hidden;
-    background-color: rgb(192, 192, 192);
-    width: 120px;
-    padding: 10px;
-    border-radius: 10%;
-  }
-  li:hover .submenu {
-    opacity: 1;
-    top: 60px;
-    visibility: visible;
-  }
-  .submenu li {
-    float: none;
-    width: 100%;
-  }
-  .submenu a {
-    color: black;
-  }
-  .call-now {
-    display: block;
-    border-left: 3px solid yellow;
-    align-content: center;
-    padding-left: 10px;
-    color: white;
-  }
-  .call-now b {
-    color: yellow;
-  }
-}
-/* https://codepen.io/search/pens?q=menu */
-
-@media (max-width: 767px) {
-  * {
-    padding: 0px;
-    margin: 0px;
-  }
-  section {
-    border: 5px black;
   }
   .section2 {
     display: flex;
@@ -244,7 +152,7 @@ li label{
     font-size: max(9vw, 2em);
   }
   .iconBg {
-    background-color: yellow;
+    background-color: var(yellow);
     width: 50px;
     height: 50px;
     padding: 10px;
@@ -256,13 +164,13 @@ li label{
   .section2 i {
     position: relative;
     color: green;
-    transform: rotate(-45deg);
+    transform: rotate(270deg);
     padding: 30px;
     top: -20px;
     left: -20px;
   }
   .section2 i:hover {
-    color: yellow;
+    color: var(yellow);
   }
   .iconMargin {
     position: relative;
@@ -276,12 +184,84 @@ li label{
 }
 
 @media (min-width: 767px) {
-  * {
-    padding: 0px;
-    margin: 0px;
+  .top-bar {
+    background-color: var(yellow);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
   }
-  section {
-    border: 5px black;
+
+  .top-bar-social {
+    display: flex;
+    justify-content: space-around;
+  }
+  .top-bar-social i {
+    color: var(black);
+  }
+  header {
+    align-content: stretch;
+    display: flex;
+    justify-content: space-between;
+    z-index: 3;
+  }
+  label {
+    display: none;
+  }
+  .menu-button {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  nav li {
+    list-style: none;
+    color: white;
+    position: relative;
+  }
+  nav a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+  }
+li label{
+  color: white;
+  width: 10px;
+}
+  .submenu {
+    position: absolute;
+    visibility: hidden;
+    background-color: rgb(192, 192, 192);
+    width: 120px;
+    padding: 10px;
+    border-radius: 10%;
+  }
+  li:hover .submenu {
+    opacity: 1;
+    top: 60px;
+    visibility: visible;
+  }
+  .submenu li {
+    float: none;
+    width: 100%;
+  }
+  .submenu a {
+    color: var(black);
+  }
+  .call-now {
+    display: block;
+    border-left: 3px solid var(yellow);
+    align-content: center;
+    padding-left: 10px;
+    color: white;
+  }
+  .call-now b {
+    color: var(yellow);
   }
   .section2 {
     width: 90%;
@@ -332,7 +312,7 @@ li label{
     font-size: 2em;
   }
   .iconBg {
-    background-color: yellow;
+    background-color: var(yellow);
     width: 50px;
     height: 50px;
     padding: 10px;
@@ -341,7 +321,7 @@ li label{
   .iconBg:hover {
     background-color: green;
   }
-  .section2 i {
+  .section3 i {
     position: relative;
     color: green;
     transform: rotate(-45deg);
@@ -349,8 +329,8 @@ li label{
     top: -20px;
     left: -20px;
   }
-  .section2 i:hover {
-    color: yellow;
+  .section3 i:hover {
+    color: var(yellow);
   }
   .iconMargin {
     position: relative;
@@ -361,7 +341,7 @@ li label{
     margin: auto;
     top: -50px;
   }
-}
+} 
 .team{
   clear: both; 
   margin-left: 5%;
@@ -496,3 +476,4 @@ hr {
   border-width: 1px;    
   
 }
+/* https://codepen.io/search/pens?q=menu */
